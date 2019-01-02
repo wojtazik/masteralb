@@ -1,0 +1,30 @@
+.logo{
+	text-align: center;
+	opacity: 0.5;
+	margin-top: 30px;
+	transition: opacity 0.5s ease-in-out;
+
+	
+	&:hover{
+		opacity: 0.8;
+	}
+	&__header{
+		display: flex;
+		flex-direction: row;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__img{
+		height: 11.2rem;
+		width: 11.2rem;
+		margin-right: 2.4rem;
+	}
+	&__title{
+		height: 11.2rem;
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+}

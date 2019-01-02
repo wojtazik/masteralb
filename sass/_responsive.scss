@@ -1,0 +1,107 @@
+@media only screen and (max-width: $bp-largest){
+		main{
+			max-height: none;
+		}
+		.logo__header{
+			padding-bottom: 4rem;
+		}
+
+		.form{
+			&__wrapper{
+				width:600px;
+			}
+
+			&__field{
+				height: 5rem;
+			}
+		}
+		.footer-img:not(:first-child){
+			padding-bottom: 1rem;	
+		}
+}
+
+@media only screen and (max-width: $bp-large){
+	.form{
+		&__content{
+			border: none;
+		}
+
+		&__wrapper{
+		width: 90vw;
+		}
+	}
+}
+
+@media only screen and (max-width: $bp-medium){
+
+	.logo__header > img{
+			transform: scale(0.5);
+		}
+
+	.form{
+		&__wrapper{
+			min-width: 100vw;
+			align-self: stretch;
+		}
+		&__content{
+			border-radius: 0;
+		}
+
+		&__field > i{
+			display: none;
+		}
+
+		
+
+		&__bar{
+			display: none;
+		}
+	}
+
+	input,
+	select,
+	label,
+	span,
+	textarea{
+		font-size: 2rem;
+	}
+	button{
+		font-size: 1.8rem;
+	}
+
+	footer > img{
+		transform: scale(.6);
+	}
+}
+
+@media only screen and (max-width: $bp-small){
+	
+	input,
+	select,
+	label,
+	span,
+	textarea{
+		font-size: 1.8rem;
+	}
+	.form__btn{
+		font-size: 1.5rem !important;
+	}
+}
+
+@media only screen and (max-width: $bp-smallest){
+	
+	.logo__header > img{
+			transform: scale(0.3);
+		}
+
+	input,
+	select,
+	label,
+	span,
+	textarea{
+		font-size: 1.4rem;
+	}
+	.form__btn{
+		font-size: 1.1rem !important;
+	}
+}

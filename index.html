@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weekly Web Dev challenge #1</title>
+	<meta charset="utf-8">
+	<meta lang="pl-PL">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.comp.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+</head>
+<body>
+	<header class="logo logo__header">
+		<img src="img/header-logo.png">
+	</header>
+	<main>
+<!--First form - Register-->
+		<div class="form__wrapper">
+			<h2 class="form__title">
+				Register form
+			</h2>
+			<form class="form__content" action="#">
+				<div class="form__field">
+					<i class="form__icon fas fa-user"></i>
+					<span class="form__bar"></span>
+					<input type="text" name="username" placeholder="Username">
+				</div>
+				<div class="form__field">
+					<i class="form__icon fas fa-lock"></i>
+					<span class="form__bar"></span>
+					<input type="password" name="password" placeholder="Password">
+				</div>
+				<div class="form__field">
+					<i class="form__icon fas fa-lock"></i>
+					<span class="form__bar"></span>
+					<input type="password" name="password_conf" placeholder="Confirm Password">
+				</div>
+				<div class="form__field">
+					<i class="form__icon fas fa-envelope"></i>
+					<span class="form__bar"></span>
+					<input type="email" name="email" placeholder="Email">
+				</div>
+				<div class="form__field">
+					<i class="form__icon fas fa-map-marker-alt"></i>
+					<span class="form__bar"></span>
+					<select name="city">
+						<option value="Your Location">Your location</option>
+						<option value="Poznan">Poznań</option>
+						<option value="Wroclaw">Wrocław</option>
+						<option value="Gdansk">Gdańsk</option>
+						<option value="Warszawa">Warszawa</option>
+						<option value="Krakow">Kraków</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				
+				
+					<label for="rules" class="form__checkbox JSRegistercheckboxLabel" value="value">
+						<input type="checkbox" id="rules" class="JSRegistercheckboxInput">
+						<span class="checkmark JScheckmark">
+							<span class="checkmark__fill JSRegistercheckmarkFill checkmark__fill--visibility">
+							</span>
+						</span>	
+						<span>I have read and accept the <a href="#">terms of use</a>.</span>		
+					</label>
+				
+
+				<button class="form__btn">Sign up</button>
+			</form>
+		</div>
+<!--Second form - Send email-->
+		<div class="form__wrapper">
+			<h2 class="form__title">
+				Send Email
+			</h2>
+			<form class="form__content" action="#">
+				<div class="form__field">
+					<i class="form__icon fas fa-user"></i>
+					<span class="form__bar"></span>
+					<input type="text" name="username" placeholder="Your name">
+				</div>
+							
+				<div class="form__field">
+					<i class="form__icon fas fa-envelope"></i>
+					<span class="form__bar"></span>
+					<input type="email" name="email" placeholder="Your email">
+				</div>
+			
+				<textarea class="form__textarea" placeholder="Type your message ..."></textarea>
+
+				<label for="sendCopy" class="form__checkbox JSRegistercheckboxLabel" value="value">
+					<input type="checkbox" id="sendCopy" class="JSRegistercheckboxInput">
+					<span class="checkmark JScheckmark">
+						<span class="checkmark__fill JSRegistercheckmarkFill checkmark__fill--visibility">
+						</span>
+					</span>	
+					<span>Send a copy to my Email</span>		
+				</label>
+				
+				<button class="form__btn">Send Email</button>
+			</form>
+		</div>
+
+<!--Third form - Sign in form-->
+
+		<div class="form__wrapper">
+			<h2 class="form__title">
+				Sign In
+			</h2>
+			<form class="form__content" action="#">
+				<div class="form__field">
+					<i class="form__icon fas fa-user"></i>
+					<span class="form__bar"></span>
+					<input type="text" name="username" placeholder="Username">
+				</div>
+							
+				<div class="form__field">
+					<i class="form__icon fas fa-lock"></i>
+					<span class="form__bar"></span>
+					<input type="password" name="password" placeholder="Password">
+				</div>
+				
+				<div class="form__flex">
+					<label for="sendCopy" class="form__checkbox JSRegistercheckboxLabel" value="value">
+						<input type="checkbox" id="sendCopy" class="JSRegistercheckboxInput">
+						<span class="checkmark JScheckmark">
+							<span class="checkmark__fill JSRegistercheckmarkFill checkmark__fill--visibility">
+							</span>
+						</span>	
+						<span>Remember me<span></span>		
+					</label>
+					
+					<button class="form__btn form__btn--inline">Sign in</button>
+				</div>
+			</form>
+		</div>
+<!--Fourth form - Recover form-->
+
+		<div class="form__wrapper">
+			<h2 class="form__title">
+				Recover Form
+			</h2>
+			<form class="form__content" action="#">
+				<div class="form__field">
+					<i class="form__icon fas fa-envelope"></i>
+					<span class="form__bar"></span>
+					<input type="email" name="username" placeholder="Enter your Email">
+				</div>
+							
+				<div class="form__field">
+					<i class="form__icon fas fa-mobile-alt"></i>
+					<span class="form__bar"></span>
+					<input type="tel" name="password" placeholder="Enter your Phone number">
+				</div>
+				
+				<div class="form__flex">
+					<button class="form__btn form__btn--inline">Send</button>
+					<button class="form__btn form__btn--inline form__btn--opacity">Done</button>
+				</div>
+			</form>
+		</div>
+
+<!--Fifth form - Subscribe form-->
+
+		<div class="form__wrapper">
+			<h2 class="form__title">
+				Subscribe form
+			</h2>
+			<form class="form__content" action="#">
+				<div class="form__field">
+					<i class="form__icon fas fa-envelope"></i>
+					<span class="form__bar"></span>
+					<input type="email" name="username" placeholder="Enter your Email">
+				</div>
+							
+				
+				<div class="form__flex">
+					<button class="form__btn form__btn--inline">Subscribe</button>
+					<button class="form__btn form__btn--inline form__btn--red">No, thanks</button>
+				</div>
+			</form>
+		</div>
+
+		<footer>
+			<img src="img/footer-logo.png" class="footer-img">
+			<img src="img/footer-link.png" class="footer-img">
+		</footer>
+
+
+
+
+	</main>
+
+
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
